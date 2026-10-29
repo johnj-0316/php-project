@@ -7,5 +7,6 @@
 <html>
 <body>    
     <h3> You have logged in successfully!</h3>
+    <img src="https://media.tenor.com/RPNoOOImaRwAAAAM/homer-simpson-homer-dance.gif">
 </body>
 </html>
