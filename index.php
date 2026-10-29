@@ -15,19 +15,34 @@ if (isset($_POST['username'], $_POST['password'])) {
 		header("Location: loginsuccess.php");
 		exit;
 	} else {
-		echo "Username or password is incorrect";
+		$error = "Username or password is incorrect";
 	}
 }
 ?>
 <!DOCTYPE html>
 <html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Login</title>
+	<link rel="stylesheet" href="style.css">
+</head>
 <body>
-	<form method="post" action="index.php">
-	username: <br>
-	<input type="text" name="username"><br>
-	password :<br>
-	<input type="password" name="password"><br>
-	<input type="submit" value="login">
-</form>
+	<main class="login-card">
+		<h1>Welcome back</h1>
+		<p class="intro">Sign in to continue.</p>
+		<?php if (isset($error)): ?>
+			<p class="error" role="alert"><?= htmlspecialchars($error, ENT_QUOTES, 'UTF-8') ?></p>
+		<?php endif; ?>
+		<form method="post" action="index.php">
+			<label for="username">Username</label>
+			<input id="username" type="text" name="username" autocomplete="username" required>
+
+			<label for="password">Password</label>
+			<input id="password" type="password" name="password" autocomplete="current-password" required>
+
+			<button type="submit">Log in</button>
+		</form>
+	</main>
 </body>
 </html>
