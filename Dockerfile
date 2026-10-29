@@ -1,3 +1,3 @@
-FROM php:sticky-squirrel-1
+FROM php
 COPY . /var/www/html/
 EXPOSE 88
