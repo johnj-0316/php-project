@@ -31,10 +31,10 @@ if (isset($_POST['username'], $_POST['password'])) {
 	<main class="login-card">
 		<form method="post" action="index.php">
 			<label for="username">Username</label>
-			<input id="username" type="text" name="username" autocomplete="username" required>
+			<input id="username" type="text" name="username">
 
 			<label for="password">Password</label>
-			<input id="password" type="password" name="password" autocomplete="current-password" required>
+			<input id="password" type="password" name="password">
 
 			<button type="submit">Log in</button>
 		</form>
