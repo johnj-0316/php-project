@@ -29,11 +29,6 @@ if (isset($_POST['username'], $_POST['password'])) {
 </head>
 <body>
 	<main class="login-card">
-		<h1>Welcome back</h1>
-		<p class="intro">Sign in to continue.</p>
-		<?php if (isset($error)): ?>
-			<p class="error" role="alert"><?= htmlspecialchars($error, ENT_QUOTES, 'UTF-8') ?></p>
-		<?php endif; ?>
 		<form method="post" action="index.php">
 			<label for="username">Username</label>
 			<input id="username" type="text" name="username" autocomplete="username" required>

@@ -56,15 +56,9 @@ button {
 	padding: 12px;
 	border: 0;
 	border-radius: 6px;
-	background: #4263eb;
-	color: #fff;
 	cursor: pointer;
 	font: inherit;
 	font-weight: 600;
-}
-
-button:hover {
-	background: #3451cf;
 }
 
 .error {
